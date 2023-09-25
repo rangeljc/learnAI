@@ -8,7 +8,15 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 
 prompt_sistema = '''
 Você é um categorizador de produtos.
-Voce deve
+Voce deve escolher uma categoria da lista abaixo:
+##### Lista de categorias válidas
+Beleza
+Entretenimento
+Esportes
+Outros
+##### Exemplo
+bola de tenis
+Esportes
 '''
 
 resposta = openai.ChatCompletion.create(
